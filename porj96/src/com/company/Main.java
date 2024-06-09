@@ -4,15 +4,23 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Person danny = new Person("001", "danny", 18, 50.5f);
-        Person johnDoe = new Person();
-        johnDoe.setAge(25);
+        Vehicle lamburgini = new Vehicle("Lamburgini");
+        lamburgini.honk();
 
-        System.out.println("dannys age is " + danny.getAge());
-        danny.setAge(-1);
-        System.out.println("dannys age after the change is " + danny.getAge());
+        Bicycle bmx = new Bicycle("BMX", 2);
+        bmx.honk();
+        System.out.println(bmx);
 
-        System.out.println(danny);
+        Rectangle r1 = new Rectangle(10, 20);
+        calcHekef(r1);
 
+        //calcHekef(bmx); // Error
+
+        Triangle t1 = new Triangle(3, 4, 5);
+        calcHekef(t1);
+    }
+
+    static void calcHekef(IHekef t) {
+        System.out.println(t.calcHekef());
     }
 }

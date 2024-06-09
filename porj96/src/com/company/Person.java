@@ -78,6 +78,7 @@ public class Person {
 
     @Override
     public String toString() {
+        //Gson gson = new Gson();
         return "Person{" +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
