@@ -23,4 +23,8 @@ public class Main {
     static void calcHekef(IHekef t) {
         System.out.println(t.calcHekef());
     }
+
+    static void calcHekefBase(BaseHekef t) {
+        System.out.println(t.calcHekef());
+    }
 }

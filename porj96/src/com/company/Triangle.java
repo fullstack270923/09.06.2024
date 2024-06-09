@@ -1,5 +1,7 @@
 package com.company;
 
+import java.io.Serializable;
+
 public class Triangle implements IHekef {
 
     protected float a;
