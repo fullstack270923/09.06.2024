@@ -1,9 +1,19 @@
 package com.company;
 
+import java.time.LocalDateTime;
+
+// final class cannot be extended
 public class Vehicle {
 
     protected String brand;
 
+    // final = const
+    // 1.
+    //protected final LocalDateTime manufactured = LocalDateTime.now();
+    // 2.
+    protected final LocalDateTime manufactured;
+
+    // final method cannot be override
     public void honk() {
         System.out.println("Tuut Tuut");
     }
@@ -18,6 +28,7 @@ public class Vehicle {
 
     public Vehicle(String brand) {
         this.brand = brand;
+        this.manufactured = LocalDateTime.now();
     }
 
     @Override

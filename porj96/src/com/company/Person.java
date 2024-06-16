@@ -11,7 +11,7 @@ public class Person {
 
 //    @Getter
 //    @Setter
-    private String id;
+    String id;
     private String name;
     private int age;
     private float weight;

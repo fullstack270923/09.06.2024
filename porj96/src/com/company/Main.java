@@ -10,11 +10,14 @@ public class Main {
         Bicycle bmx = new Bicycle("BMX", 2);
         bmx.honk();
         System.out.println(bmx);
+        System.out.println(bmx.manufactured);
 
         Rectangle r1 = new Rectangle(10, 20);
         calcHekef(r1);
 
         //calcHekef(bmx); // Error
+
+        //new BaseHekef();
 
         Triangle t1 = new Triangle(3, 4, 5);
         calcHekef(t1);
